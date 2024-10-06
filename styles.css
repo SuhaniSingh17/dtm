@@ -1,0 +1,172 @@
+/* Global styling */
+/* Global styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container to hold sidebar and main content */
+.container {
+    display: flex;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    background-color: #537D90;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-nav li {
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: #537D90;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #d5d8d9;
+}
+
+/* Styling for the bottom part of the sidebar (settings, user profile, logout) */
+.sidebar-bottom {
+    margin-top: auto;
+}
+
+.sidebar-bottom ul {
+    list-style: none;
+    padding: 0;
+}
+
+.logout {
+    background-color: #537D90;
+}
+
+.logout:hover {
+    background-color: #d5d8d9;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+.user-profile img {
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+
+/* Main content styling */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #d5d8d9;
+}
+
+.main-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.dark-mode-toggle {
+    float: right;
+    margin-bottom: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #a1a3a4;
+    border: none;
+    cursor: pointer;
+}
+
+.dark-mode-toggle:hover {
+    background-color: #bdc3c7;
+}
+
+/* Grid layout for cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Card styling */
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.0);
+}
+
+.card h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-data {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+}
+
+/* Course breakdown section */
+.course-breakdown {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.0);
+}
+
+/* Scroll area for upcoming events */
+.scroll-area {
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.scroll-area p {
+    margin: 0 0 10px;
+}

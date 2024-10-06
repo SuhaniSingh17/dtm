@@ -1,0 +1,85 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light">
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="sidebar-title">OASYS</h2>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><button class="button" id="dashboard-btn"><i class="icon-home"></i> Plan Holidays</button></li>
+                    <li><button class="button" id="plan-holidays-btn"><i class="icon-calendar"></i>Calender</button></li>
+                    <li><button class="button"><i class="icon-alert-triangle"></i> Alerts</button></li>
+                    <li><button class="button"><i class="icon-download"></i> Reports</button></li>
+                    <li><button class="button"><i class="icon-download"></i> Attendance</button></li>
+                </ul>
+            </nav>
+
+            <!-- User Settings at the Bottom -->
+            <div class="sidebar-bottom">
+                <ul>
+                    <li><button class="button"><i class="icon-settings"></i> Settings</button></li>
+                    <li><button class="button"><i class="icon-help-circle"></i> Help</button></li>
+                    <li><button class="button"><i class="icon-user"></i> User Profile</button></li>
+                    <li><button class="button logout"><i class="icon-logout"></i> Logout</button></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main content -->
+        <main class="main-content">
+            <h1 class="main-title">Dashboard</h1>
+            <button id="dark-mode-toggle" class="dark-mode-toggle">
+                <i class="icon-moon"></i>
+            </button>
+
+            <!-- Row of three equal divs -->
+            <div class="grid">
+                <!-- Overall Attendance Card -->
+                <div class="card">
+                    <h3>Overall Attendance</h3>
+                    <div class="card-content">
+                        <div id="overall-attendance" class="card-data">82%</div>
+                        <progress id="attendance-progress" class="progress-bar" value="82" max="100"></progress>
+                        <p id="attendance-status">You're on track!</p>
+                    </div>
+                </div>
+
+                <!-- Alerts Card -->
+                <div class="card">
+                    <h3>Alerts</h3>
+                    <div class="card-content">
+                        <div class="card-data">2</div>
+                        <p>Important notifications about your attendance</p>
+                    </div>
+                </div>
+
+                <!-- Upcoming Events Card -->
+                <div class="card">
+                    <h3>Upcoming Events</h3>
+                    <div class="card-content scroll-area" id="upcoming-events">
+                        <!-- Events will be listed one after another here -->
+                        <!-- Add more events as needed -->
+                    
+            
+        </div>
+                </div>
+            </div>
+
+            <!-- Course Breakdown -->
+            <div class="course-breakdown">
+                <h3>Course-Wise Breakdown</h3>
+                <div id="course-breakdown">
+                
+        </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    </body>
+    </html>
